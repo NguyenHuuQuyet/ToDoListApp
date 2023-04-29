@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/css/main.css}">
+    <script th:href="@{/js/bootstrap.js}"></script>
+</head>
+<body>
+<h1 th:text="#{loda.message.hello}"></h1>
+<a th:href="@{/listTodo}" th:text="#{loda.value.viewListTodo}" class="btn btn-primary"></a>
+<a th:href="@{/addTodo}" th:text="#{loda.value.addTodo}" class="btn btn-success"></a>
+</body>
+</html>
